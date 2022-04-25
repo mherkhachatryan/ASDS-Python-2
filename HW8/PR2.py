@@ -8,7 +8,8 @@ while True:
     if frame_loaded:
         cv2.imshow("vid1", frame)
     else:
-        raise ValueError("Empty Frame")
+        print("Empty Frame")
+        exit(1)
 
     if cv2.waitKey(20) & 0xFF == ord('1'):
         break

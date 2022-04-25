@@ -15,7 +15,8 @@ while True:
         cv2.imshow('Original', frame)
         cv2.imshow('Rescaled', frame_rescaled)
     else:
-        raise ValueError("Frame is not captured")
+        print("Frame is not captured")
+        exit(1)
 
     if cv2.waitKey(20) & 0xFF == ord('d'):
         break
